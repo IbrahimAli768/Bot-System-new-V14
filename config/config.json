@@ -1,0 +1,24 @@
+{
+    "data_run_bot":{
+        "dev":"𝑫𝒂𝒓𝒌_𝑴𝒂𝒔𝒕𝒆𝒓#7420",
+        "lang":"\"JavaScript, Python, git, html, css\"",
+        "prefix":"-"
+    },
+    "colors":{
+        "none":"DARK_BUT_NOT_BLACK",
+        "true":"#27c40a",
+        "false":"#c90407",
+        "warning":"#c96a04",
+        "dm_user":"#036dec"
+    },
+
+    "time":{
+        "timer": 3000
+    },
+
+    "config_bot":{
+        "ID_BOT": "949755568938168353",
+        "ID_SERVER_RUN_SLASHCOAMMND": "974515771281666138",
+        "lang": "ar"
+    }
+}
