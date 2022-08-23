@@ -10,25 +10,26 @@ module.exports = async (client) => {
 		if (!interaction.isChatInputCommand()) return;
 		const { commandName } = interaction;
         
-      /*  await interaction.deferReply();
-        await wait(config.time.timer);*/
+        await interaction.deferReply();
+        await wait(config.time.timer);
 
 	
 		if (commandName === 'ping') {
-            await interaction.reply({content : `> 🏓 **Ping: \`${client.ws.ping}ws\`**`});
+            await interaction.followUp({content : `> 🏓 **Ping: \`${client.ws.ping}ws\`**`});
 		}
         
         if(commandName === "say"){
             let input = interaction.options.getString('input')
-            
+            return interaction.editReply({content : `> 🟢 **Done set [say] this => [\`${input}\`]**`})
+          
             return interaction.channel.send({content : `${input}`})
         }
         
         if(commandName === "tax"){
             let input = interaction.options.getString('input')
-            if(isNaN(input)) return interaction.reply({content : `> **Please type Number Don't [\`${input}\`]**`})
-               let tAx = tax.taxs(input)
-            return interaction.reply({content : `${tAx}`})
+          let args2 = input.replace("k", "000").replace("m", "000000").replace('M', "000000").replace('K', "000")
+          let tAx = Math.floor(args2 * (20) / (19) + (1))
+            return interaction.followUp({content : `${tAx}`})
         }
 	});
     
