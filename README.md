@@ -21,3 +21,6 @@
 
 # Create Projects
 ![logo](https://media.discordapp.net/attachments/972743576381444126/1010637698807115856/Replit_Create_Three_Dark_Master.png)
+
+# Editing Code [config.json]
+![logo](https://media.discordapp.net/attachments/972743576381444126/1011559153916989501/msedge_GwEKn6K9eV.png?width=646&height=640)
