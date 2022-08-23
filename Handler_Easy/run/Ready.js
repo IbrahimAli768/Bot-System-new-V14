@@ -4,6 +4,7 @@ const config = require("../../config/config.json")
 
 let BOT = config.config_bot.ID_BOT
 let SERVERID = config.config_bot.ID_SERVER_RUN_SLASHCOAMMND
+let DEV = config.data_run_bot.dev
 
 module.exports = async (client) =>{
     client.on('ready', () =>{
@@ -12,6 +13,9 @@ module.exports = async (client) =>{
     -= I Ready Now ( ${client.user.tag} ) =-
     -======================================-
     -= Guilds: ${client.guilds.cache.size} =-
+    -======================================- 
+    -======================================-
+    -= Developer: ${DEV} =-
     -======================================- 
         `)
         try{

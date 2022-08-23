@@ -27,7 +27,7 @@ module.exports = async (client) => {
         
         if(commandName === "tax"){
             let input = interaction.options.getString('input')
-          let args2 = input.replace("k", "000").replace("m", "000000").replace('M', "000000").replace('K', "000")
+          var _0x9a49=["\x4B","\x30\x30\x30","\x72\x65\x70\x6C\x61\x63\x65","\x4D","\x30\x30\x30\x30\x30\x30","\x6D","\x6B"];let args2=input[_0x9a49[2]](_0x9a49[6],_0x9a49[1])[_0x9a49[2]](_0x9a49[5],_0x9a49[4])[_0x9a49[2]](_0x9a49[3],_0x9a49[4])[_0x9a49[2]](_0x9a49[0],_0x9a49[1])
           let tAx = Math.floor(args2 * (20) / (19) + (1))
             return interaction.followUp({content : `${tAx}`})
         }
