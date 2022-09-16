@@ -31,6 +31,11 @@ module.exports = async (client) => {
           let tAx = Math.floor(args2 * (20) / (19) + (1))
             return interaction.followUp({content : `${tAx}`})
         }
+
+      if(commandName == "come"){
+        let user = interaction.options.getUser('user')
+        user.send({content: `DONE`})
+      }
 	});
     
 }

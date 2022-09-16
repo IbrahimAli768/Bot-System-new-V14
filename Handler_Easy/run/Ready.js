@@ -32,6 +32,11 @@ module.exports = async (client) =>{
 		option.setName('input')
 			.setDescription('typeing any number ')
 			.setRequired(true)),
+
+          new SlashCommandBuilder().setName('come').setDescription('Commands [ COME ] probot').addUserOption(option =>
+		option.setName('user')
+			.setDescription('typeing any number ')
+			.setRequired(true)),
         ]
             .map(command => command.toJSON());
           
